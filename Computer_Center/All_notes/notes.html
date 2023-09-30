@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Notes</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="nav-bar">
+        <nav>
+            <div class="nav-bar">
+                <i class='bx bx-menu sidebarOpen' ></i>
+                <span class="logo navLogo"><a href="#">Computer</a></span>
+
+                <div class="menu">
+                    <div class="logo-toggle">
+                        <span class="logo"><a href="#">Computer</a></span>
+                        <i class='bx bx-x siderbarClose'></i>
+                    </div>
+
+                    <ul class="nav-links">
+                         <li><a href="../index.html">Home</a></li>
+                         <li><a href="../Contact_Us/Contact.html">Contact Us</a></li>
+                         <li><a href="../Courses_Details/all_courses.html">Courses details</a></li>
+                         <li><a href="#">Notes</a></li>
+                         <li><a href="../Admison Form/admison_form.html">Admison Form</a></li>
+                    </ul>
+                </div>
+
+                <div class="darkLight-searchBox">
+
+                    <div class="searchBox">
+                       <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                       </div>
+
+                        <div class="search-field">
+                            <input type="text" placeholder="Search...">
+                            <i class='bx bx-search'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="item-con mar-top">
+                <h2>All Notes</h2>
+            </div>
+            <div class="all-notes" id="mainContent">
+                
+
+                <!-- main link -->
+
+
+            </div>
+
+        </section>
+        <style type="text/css">
+            iframe{
+                width: 80%;
+                height: 100%;
+            }
+        </style>
+        <section class="vid-sec" id="mainContaner">
+            <div class="main-sec" onclick="videoSection()">
+
+                <div class="see-vid">
+                    <h1>Tutorial Video</h1>
+                    <button id="crossDiv" onclick="croseBtn()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="main-contaner-vid" id="videoTutorial">
+                    <!-- <div class="rite">Microsoft (Word)</div>
+                    <div class="pla-video">
+                        <div class="navegate">
+                            HOME
+                        </div>
+                        <div class="video-play">
+                            <iframe width="80%" height="400px"
+                                src="https://www.youtube.com/embed/GqyA5QfiJoQ?si=hu4aYF0F52BhcOh_"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+
+                    </div> -->
+                </div>
+
+            </div>
+        </section>
+
+        <section class="vid-sec second" id="secContentId">
+            <div class="main-sec" id="examDiv">
+
+                <div class="see-vid">
+                    <h1>Online Exam</h1>
+                    <button id="closBtnSecId" onclick="closeBtn()">
+                        <i id="closBtnId" class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="main-contaner-vid">
+
+                    <div class="rite" id="examContaner">Microsoft (Word)</div>
+                    <div class="pla-video">
+                        <div class="popup_box" id="popup_boxId">
+                            <h1>Warning</h1>
+                            <label>FullScreen the Page</label>
+                            <div class="btns">
+                                <button id="btnIdWarning" onclick="clickWarning()" class="btn2">Ok</button>
+                            </div>
+                        </div>
+
+                        <div class="popup" id="popup_Id">
+                            <p>Exam Time no Cheating</p>
+                            <div class="btnsClass">
+                                <button id="btnId" class="btnClass" onclick="hide()">Ok</button>
+                            </div>
+                        </div>
+
+                        <div class="start_btn">
+                            <div class="student_name">
+                                <label>Candidate Name - </label><br>
+                                <input type="text" oninput="fun1()" id="nameId" name="" autofocus><br>
+                            </div>
+                            <button class="restart">Start Exam</button>
+                        </div>
+
+
+                        <div class="info_box">
+                            <div class="info_title">
+                                <span>Some Rules of the Exam</span>
+                            </div>
+                            <div class="info_list">
+                                <div class="info">1. You will have only <span>30 seconds</span> per each question.</div>
+                                <div class="info">2. Once you select your answer, you can't reselect.</div>
+                                <div class="info">3. You can't select any option once time goes off.</div>
+                                <div class="info">4. You can't exit from the Exam while you're playing.</div>
+                                <div class="info">5. You'll get points on the basis of your correct answers.</div>
+                            </div>
+                            <div class="buttons">
+                                <button class="quit">Exit Exam</button>
+                                <button class="restart">Continue</button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="quiz_box">
+                            <header>
+                                <div class="title">Good Luck for Exam</div>
+                                <div class="timer">
+                                    <div class="time_text">Time Left</div>
+                                    <div class="timer_sec">30</div>
+                                </div>
+                                <div class="time_line"></div>
+                            </header>
+                            <section>
+                                <div class="que_text">
+                                    <!-- <span>What does HTML stand for?</span> -->
+                                </div>
+                                <div class="option_list">
+                                    <!-- <div class="option">
+                                        <span>Hyper Text Preprocessor</span>
+                                        <div class="icon tick"><i class="fa fa-check"></i></div>
+                                    </div>
+                                    <div class="option">
+                                        <span>Hyper Text Markup Language</span>
+                                        <div class="icon cross"><i class="fa fa-times"></i></div>
+                                    </div>
+                                    <div class="option">
+                                        <span>Hyper Text Multiple Language</span>
+                                    </div>
+                                    <div class="option">
+                                        <span>Hyper Text Multi Language</span>
+                                    </div> -->
+                                </div>
+                            </section>
+
+                            <footer>
+                                <div class="total_que">
+                                    <!-- <span>
+                                        <p>2</p>
+                                        of
+                                        <p>5</p>
+                                        Questions
+                                    </span> -->
+                                </div>
+                                <button class="next_btn">Next Question</button>
+                            </footer>
+                        </div>
+
+
+
+                        <div class="result_box">
+                            <div class="icon">
+                                <!-- <img src="Rajeev Gandhi Computer Saksharta Abhiyan.jpg"> -->
+                            </div>
+                            <div class="complete_text">
+                                You've completed the Exam
+                            </div>
+                            <div class="score_text">
+                                <!-- <span>
+                                    and sorry, You got only 
+                                    <p>2</p> 
+                                    out of 
+                                    <p>5</p>
+                                </span> -->
+                            </div>
+                            <div class="buttons">
+                                <button class="restart" id="printId">Print</button>
+                                <button class="quit" id="quiteExam">Quit exam</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+         <div class="containerFooter">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Notes</a></li>
+                        <li><a href="#">Reference Books</a></li>
+                        <li><a href="#">Study Resources</a></li>
+                        <li><a href="#">State Boards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/tarapada.garai.35"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/RakeshGarai100"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/tarapada_9679/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/tarapada-garai-1a9a5a257/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+         </div>
+         <div style="position: absolute; right: 50%; margin: 4vh 0;">Copyright © 2023</div>
+        </footer>
+    <div class="hideBackground" id="hidebgId"></div>
+
+
+    <script src="../script.js"></script>
+    <script src="mainScript.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="question.js"></script> -->
+    <script>
+        let closButton = document.getElementById('closBtnId');
+        // let secDiv = document.getElementById('secContentId');
+
+        // let data = document.getElementById('tutorialId');
+        // let contaner = document.getElementById('mainContaner');
+        
+    </script>
+     <script>
+        // let examDiv = document.getElementById('examDiv');
+        let sCloseB = document.getElementById('closBtnSecId');
+        // let examBtn = document.getElementById('examBtnId');
+        let secDiv = document.getElementById('secContentId');
+
+    </script>
+
+</body>
+
+</html>
