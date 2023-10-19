@@ -1599,16 +1599,8 @@ const openExam = (i) =>{
 		const timeLine = quiz_box.querySelector("header .time_line");
 		const timeOff = quiz_box.querySelector("header .time_text");
 		var elem = document.documentElement;
-		var name1 = "";
 
 		option_list = document.querySelector(".option_list");
-
-		function fun1() {
-		    name1 = document.getElementById('nameId').value;
-		}
-		function fun2() {
-		    document.getElementById("showArea").innerHTML = name1;
-		}
 
 		//if Start Exam Button Clicked
 		start_btn.onclick = () => {
@@ -1844,9 +1836,15 @@ function checkFullScreen() {
         sCloseB.style.display = 'none'
     }
     else {
-        examDiv.style.background = '#fff'
-        examDiv.style.height = '90%'
-        examDiv.style.width = '80%'
+    	if (screen.width <= '450') {
+    		examDiv.style.background = '#fff'
+	        examDiv.style.height = '90%'
+	        examDiv.style.width = '95%'
+    	}else{
+    		examDiv.style.background = '#fff'
+	        examDiv.style.height = '90%'
+	        examDiv.style.width = '80%'
+    	}
         closButton.style.display = 'block'
         sCloseB.style.display = 'block'
         document.getElementById('popup_boxId').style.display = 'block';

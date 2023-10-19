@@ -799,7 +799,7 @@ section {
   padding-bottom: 10px;
   opacity: 1;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-  transition: all 2s ease 3s;
+  transition: all ease 0.5s;
   z-index: 999999;
   border-radius: 10px;
 }
@@ -1608,7 +1608,11 @@ ul{
     justify-content: space-evenly;
     flex-direction: column;
   }
+  .popup_box{
+    width: 80vw;
+  }
   .start_btn button {
+    padding: 2vh 2.5vh;
     font-size: 3vh;
   }
   .info_box,.quiz_box,.result_box {
@@ -1631,5 +1635,12 @@ ul{
   }
   .for-img img {
     width: 90vw;
+  }
+  .time_line{
+    display: none;
+  }
+  .examSm{
+    height: 90vh;
+    width: 95vw;
   }
 }
